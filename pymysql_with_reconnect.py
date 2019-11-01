@@ -21,7 +21,7 @@ class Mysql_Query:
 
 	def _conn (self):
 		try:
-			self.conn = pymysql.connect(host=self.host,user=self.user,password=self.password,port=self.port, charset=self.charset)
+			self.conn = pymysql.connect(host=self.host, user=self.user, password=self.password, port=self.port, charset=self.charset)
 			return True
 		except :
 			return False
